@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/brand-logo.png">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>SAB Alumni Network | Login</title>
+</head>
+<body data-aos="fade-down">
+
+<header class="site-header">
+  <div class="site-header__brand">
+    <a href="#">
+      <img src="./images/brand-logo.svg" alt="SAB Alumni Logo" class="site-header__logo"/>
+    </a>
+  </div>
+  <h1 class="site-header__title">Welcome to SAB Alumni</h1>
+  <div class="site-header__video-container">
+    <video autoplay muted loop class="site-header__video">
+      <source src="images/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="site-header__video-overlay"></div>
+  </div>
+</header>
+
+<main class="main-content">
+  <section class="login">
+    <div class="login__content">
+      <h2 class="login__title"><span>Login</span> or <span>Register</span> Below</h2>
+      <div class="login__description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="login__actions">
+        <button class="login__register-button" id="register_button">Register</button>
+        <button class="login__login-button" id="login_button">Login</button>
+      </div>
+      <div class="logi_info-message">
+        <h3 class="login__help-title">Need Help? Contact Us!</h3>
+        <p>If you're encountering any issues or have questions regarding the sign-up process or any other aspect of our platform, our dedicated support team is here to assist you. Please don't hesitate to reach out for help or clarification</p>
+      </div>
+    
+      <div class="contact-form">
+        <!--register form-->
+        <form action="#" method="POST" id="register-form">
+          <div class="form-group">
+            <label for="firstName" class="form-label">Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Lethabo" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName" class="form-label">Surname</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Jonas" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="LethaboJonas@sab.dev" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" rows="4" class="form-control" placeholder="Enter your message here"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="file-input" class="form-label">Image Reference
+                <input type="file" id="file-input" class="file-input" accept="image/*" hidden >
+                <div id="drop-area" class="drop-area">  
+                    <img src="./images/download-lcon.svg" alt="download-lcon"/ class="download-lcon">
+                     <div class="img-copy">
+                       <h4 class="img-copy">Select a file or drag and drop here</h4>
+                      <h5 class="img-format-copy">JPG, PNG, file size no more than 10MB</h5>
+                     </div>
+                     <button type="submit" class="button button--add">Add</button>
+                   </div>
+
+                   <div class="image-preview-container">
+                    <img id="image-preview" style="max-width: 300px; margin-top: 10px;" />
+
+                    <div id="progress-container" class="progress-container">
+                      <div class="img-size-info">
+                        <p class="image-error">Register error.png</p>
+                        <p class="img-size">5.7MB</p>
+                      </div>
+                      
+                      <div id="progress-bar""></div>
+                    </div>
+                   </div>
+                  
+            </label> 
+          </div>
+          <label class="error-msg">Please fill in the form.</label>
+          <label class="success-msg">Thank you for filling a form.</label>
+          <button type="submit" id = "btnSubmit" class="button button--submit">Submit</button>
+        </form>
+<!--Login form-->
+        <form action="#" method="POST" id="login-form" style="display: none;">
+          <div class="form-group">
+            <label for="firstName" class="form-label">Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Lethabo" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="LethaboJonas@sab.dev" class="form-control" required>
+          </div>
+          <div class="form-group">
+          <label class="error-msg">Please fill in the form.</label>
+          <button type="submit" id = "btnSubmit" class="button button--submit">Submit</button>
+        </form>
+   
+      </div>
+
+    
+    </div>
+  </section>
+</main>
+<script src="./assets/js/script.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

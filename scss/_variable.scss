@@ -1,0 +1,31 @@
+/*scss page for a study guide*/
+//Import the boostrap element
+@use "./typography";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+//colors
+$brown: #d8af7a;
+$black: #000000;
+$dark-red: #a20202;
+$white: #ffffff;
+$very-light-greyish-color: #d5dae1;
+
+//font size
+$body-size: 18px;
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1100px,
+  // customised to accomordate for ipad pro for this project
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+//font family
+$site-font-family: "lato-regular", sans-serif;
+$heading-font-family: "lato-black", sans-serif;
+$form-font-family: "poppins-regular", sans-serif;

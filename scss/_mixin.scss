@@ -1,0 +1,48 @@
+@use "./variable" as *;
+@import "./typography";
+
+@mixin btn-primary {
+  padding: 14px 30px;
+  border: none;
+  color: $white;
+  min-width: 165px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $black;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include media-breakpoint-up(lg) {
+    text-transform: none;
+  }
+}
+
+@mixin btn-secondary {
+  padding: 14px 30px;
+  border: none;
+  color: $white;
+  min-width: 165px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: $brown;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @include media-breakpoint-up(lg) {
+    text-transform: none;
+  }
+}
+
+@mixin important-msg {
+  color: $dark-red;
+}
